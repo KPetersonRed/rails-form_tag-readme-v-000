@@ -239,3 +239,10 @@ Processing by PostsController#new as HTML
   Parameters: {"post"=>{"title"=>"Bob", "description"=>"Jones"}, "authenticity_token"=>"1UzXX/KWMkiSvK2O32xhm2A8NZGKgBosVvXzXvnsI91QEEsLqJG1Jz94rvWbkDNyIS8/Hf3YZgZd4cFv+XsaXw=="}
   Rendered posts/new.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 104.7.73.146 at 2018-03-09 17:37:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 275ms (Views: 265.6ms | ActiveRecord: 0.0ms)
