@@ -225,3 +225,17 @@ Did you mean?  form_authenticity_token):
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.4ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=Jane&post%5Bdescription%5D=Jane+Doe" for 104.7.73.146 at 2018-03-09 17:31:37 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"Jane", "description"=>"Jane Doe"}}
+  Rendered posts/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=Bob&post%5Bdescription%5D=Jones&authenticity_token=1UzXX%2FKWMkiSvK2O32xhm2A8NZGKgBosVvXzXvnsI91QEEsLqJG1Jz94rvWbkDNyIS8%2FHf3YZgZd4cFv%2BXsaXw%3D%3D" for 104.7.73.146 at 2018-03-09 17:31:46 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"Bob", "description"=>"Jones"}, "authenticity_token"=>"1UzXX/KWMkiSvK2O32xhm2A8NZGKgBosVvXzXvnsI91QEEsLqJG1Jz94rvWbkDNyIS8/Hf3YZgZd4cFv+XsaXw=="}
+  Rendered posts/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
