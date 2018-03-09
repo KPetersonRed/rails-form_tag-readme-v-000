@@ -167,3 +167,16 @@ Started GET "/posts/new" for 104.7.73.146 at 2018-03-09 17:20:07 +0000
 Processing by PostsController#new as HTML
   Rendered posts/new.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 104.7.73.146 at 2018-03-09 17:21:56 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=Kristy&post%5Bdescription%5D=Kristy+Peterson" for 104.7.73.146 at 2018-03-09 17:22:10 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"Kristy", "description"=>"Kristy Peterson"}}
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
